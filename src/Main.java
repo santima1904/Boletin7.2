@@ -10,6 +10,7 @@ public class Main {
         circulo1.setRadio(4);
         */
         Ejercicio1 intento = new Ejercicio1();
+
         System.out.println(intento.getAbierto());
         intento.abrirCerrojo(2);
         System.out.println(intento.getAbierto());

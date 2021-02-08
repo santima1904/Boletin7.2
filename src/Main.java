@@ -1,11 +1,17 @@
+import clases.Carta;
+import clases.PersonajesImp;
+import enums.Armas;
+import enums.Hechizos;
+
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
+        int eleccion=0;
+        /*
         //Ejercicio 6
         Carta cartaActual;
-        int eleccion=0;
+
         double contadorSumaTotal= 0;
         Scanner teclado = new Scanner(System.in);
 
@@ -52,9 +58,12 @@ public class Main {
             System.out.println("-----------");
         }
 
+
+         */
+
         /*
-        Rectangulo rectangulo1 = new Rectangulo();
-        Circulo circulo1 = new Circulo();
+        Clases.Rectangulo rectangulo1 = new Clases.Rectangulo();
+        Clases.Circulo circulo1 = new Clases.Circulo();
 
         rectangulo1.setAltura(6);
         rectangulo1.setBase(5);
@@ -62,12 +71,23 @@ public class Main {
         circulo1.setRadio(4);
         */
         /*
-        Ejercicio1 intento = new Ejercicio1();
+        Clases.Ejercicio1 intento = new Clases.Ejercicio1();
 
         System.out.println(intento.getAbierto());
         intento.abrirCerrojo(2);
         System.out.println(intento.getAbierto());
          */
+
+
+        //Ejercicio 7
+        PersonajesImp elfo = new PersonajesImp("Pepe", "elfo", "carpintero", 25, 6, 9, 7, Armas.DAGA, Hechizos.SUGUNTUN);
+        PersonajesImp orco = new PersonajesImp("Elias", "orco", "charcutero", 30, 8, 3, 1, Armas.MAZO, Hechizos.AMOJOLORA);
+
+
+
+
+
+
 
 
     }

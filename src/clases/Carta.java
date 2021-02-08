@@ -1,4 +1,8 @@
+package clases;
+
 import java.util.Random;
+import enums.Palo;
+import enums.Valor;
 
 public class Carta {
     //Atributos
@@ -62,7 +66,7 @@ public class Carta {
 
     @Override
     public String toString() {
-        return "Carta{" +
+        return "Clases.Carta{" +
                 "palo=" + palo +
                 ", valor=" + valor +
                 ", sumaTotal=" + sumaTotal +

@@ -1,3 +1,4 @@
+package clases;
 /*
 Ejercicio 1:  Diseñe e implemente una clase Cerrojo con combinación que tiene los siguientes requisitos (Realice el estudio de interfaz):
 Tiene una combinación, que es una secuencia de tres números y está oculta.
@@ -6,7 +7,6 @@ El cerrojo se puede abrir proporcionando la combinación.
 Deshabilite la copia de cerrojos con combinación.
  */
 
-import javax.swing.*;
 import java.util.Scanner;
 
 public class Ejercicio1 {
@@ -22,7 +22,7 @@ public class Ejercicio1 {
  * Restricciones: -	combiancion numero positivo de 3 cifras.
  *
  * Interfaz
- * public Ejercicio1();
+ * public Clases.Ejercicio1();
  * int getCombinacion();
  * void setCombinacion(int horas);
  * int getAbierta();

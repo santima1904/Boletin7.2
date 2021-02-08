@@ -1,4 +1,8 @@
-public class Rectangulo implements Figura{
+package clases;
+
+import interfaces.Figura;
+
+public class Rectangulo implements Figura {
 private double base;
 private double altura;
 private double area;

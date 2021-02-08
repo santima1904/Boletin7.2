@@ -1,3 +1,5 @@
+package clases;
+
 public class Timbre {
     //Atributos
     private boolean activado;
@@ -21,6 +23,6 @@ public class Timbre {
 
     public void apagarTimbre(){
         activado=false;
-        System.out.println("Timbre desactivado");
+        System.out.println("Clases.Timbre desactivado");
     }
 }

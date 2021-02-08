@@ -1,4 +1,8 @@
-public class Circulo implements Figura{
+package clases;
+
+import interfaces.Figura;
+
+public class Circulo implements Figura {
     private double radio;
     private double area;
 
@@ -14,7 +18,7 @@ public class Circulo implements Figura{
 
     @Override
     public void getArea() {
-        area = 2*PI*radio;
+        area = 2* Figura.PI*radio;
     }
 }
 

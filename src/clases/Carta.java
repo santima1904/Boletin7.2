@@ -5,6 +5,26 @@ import enums.Palo;
 import enums.Valor;
 
 public class Carta {
+    /*
+   Diseña Carta para generar una carta aleatoria
+*
+* Estudio de Interfaz
+* Clase Carta
+* palo: enum
+* valor: enum
+* sumaTotal: statica, decimal, modificable
+*
+*
+*
+* Interfaz
+* public Clases.Carta();
+* getters and setters
+* toString
+*
+* Metodos añadidos
+* Metodo para ver la suma total
+    */
+
     //Atributos
     private Palo palo;
     private Valor valor;

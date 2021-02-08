@@ -105,6 +105,12 @@ public class PersonajesImp implements Personajes {
         this.hechizo = hechizo;
     }
 
+    /*
+    Entradas: Objeto PersonajesImp a
+    Salidas: ninguna
+    Precondiciones: Objeto personajeImp creado
+    Postcondiciones: Se intercambian las armas entre los dos personajes
+     */
     @Override
     public void intercambiarArmaA(PersonajesImp a) {
         PersonajesImp auxiliar = new PersonajesImp("Pepe", "elfo", "carpintero", 25, 6, 9, 7, Armas.DAGA, Hechizos.SUGUNTUN);
@@ -113,10 +119,17 @@ public class PersonajesImp implements Personajes {
         a.arma = auxiliar.arma;
     }
 
+    /*
+    Entradas: Objeto PersonajesImp a
+    Salidas: ninguna
+    Precondiciones: Objeto personajeImp creado
+    Postcondiciones: Se lanza el hechizo contra el oponente causandole daño
+     */
     @Override
     public void lanzarHechizoA(PersonajesImp a) {
         if (a.getVida()>0){
             a.vida = a.vida - this.hechizo.getDanho();
+            System.out.println(this.getHechizo()+"!!");
             System.out.println("Has hecho : "+this.hechizo.getDanho()+" de danho");
             if (a.vida<=0){
                 System.out.println("Ha muerto");
@@ -129,10 +142,17 @@ public class PersonajesImp implements Personajes {
 
     }
 
+    /*
+    Entradas: Objeto PersonajesImp a
+    Salidas: ninguna
+    Precondiciones: Objeto personajeImp creado
+    Postcondiciones: Se ataca con el arma contra el oponente causandole daño
+     */
     @Override
     public void atacarA(PersonajesImp a) {
         if (a.getVida()>0){
             a.vida = a.vida - this.arma.getDanho();
+            System.out.println("Atacaste con "+this.getArma());
             System.out.println("Has hecho : "+this.arma.getDanho()+" de danho");
             if (a.vida<=0){
                 System.out.println("Ha muerto");

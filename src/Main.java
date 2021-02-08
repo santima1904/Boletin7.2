@@ -2,6 +2,7 @@ import clases.Carta;
 import clases.PersonajesImp;
 import enums.Armas;
 import enums.Hechizos;
+import interfaces.Figura;
 
 import java.util.Scanner;
 
@@ -62,14 +63,17 @@ public class Main {
          */
 
         /*
-        Clases.Rectangulo rectangulo1 = new Clases.Rectangulo();
-        Clases.Circulo circulo1 = new Clases.Circulo();
+        clases.Rectangulo rectangulo1 = new clases.Rectangulo();
+        clases.Circulo circulo1 = new clases.Circulo();
 
         rectangulo1.setAltura(6);
         rectangulo1.setBase(5);
 
         circulo1.setRadio(4);
-        */
+
+         */
+
+        //Ejercicio1
         /*
         Clases.Ejercicio1 intento = new Clases.Ejercicio1();
 
@@ -83,7 +87,8 @@ public class Main {
         PersonajesImp elfo = new PersonajesImp("Pepe", "elfo", "carpintero", 25, 6, 9, 7, Armas.DAGA, Hechizos.SUGUNTUN);
         PersonajesImp orco = new PersonajesImp("Elias", "orco", "charcutero", 30, 8, 3, 1, Armas.MAZO, Hechizos.AMOJOLORA);
 
-
+        elfo.lanzarHechizoA(orco);
+        elfo.atacarA(orco);
 
 
 

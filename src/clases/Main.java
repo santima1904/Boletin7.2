@@ -1,3 +1,5 @@
+package clases;
+
 import clases.Carta;
 import clases.PersonajesImp;
 import enums.Armas;
@@ -62,7 +64,7 @@ public class Main {
 
          */
 
-        /*
+
         clases.Rectangulo rectangulo1 = new clases.Rectangulo();
         clases.Circulo circulo1 = new clases.Circulo();
 
@@ -71,7 +73,9 @@ public class Main {
 
         circulo1.setRadio(4);
 
-         */
+        System.out.println();
+
+
 
         //Ejercicio1
         /*

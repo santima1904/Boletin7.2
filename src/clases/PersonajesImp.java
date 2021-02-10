@@ -1,5 +1,4 @@
 package clases;
-
 import interfaces.Personajes;
 import enums.Armas;
 import enums.Hechizos;
@@ -19,8 +18,7 @@ public class PersonajesImp implements Personajes {
 
 
     //Metodos
-
-
+    //CONSTRUCTOR
     public PersonajesImp(String nombre, String raza, String profesion, int vida, int fuerza, int destreza, int inteligencia, Armas arma, Hechizos hechizo) {
         this.nombre = nombre;
         this.raza = raza;
@@ -33,6 +31,7 @@ public class PersonajesImp implements Personajes {
         this.hechizo = hechizo;
     }
 
+    //GETTERS AND SETTERS
     public String getNombre() {
         return nombre;
     }
@@ -139,7 +138,6 @@ public class PersonajesImp implements Personajes {
         }else{
             System.out.println("Está muerto");
         }
-
     }
 
     /*
@@ -162,6 +160,5 @@ public class PersonajesImp implements Personajes {
         }else{
             System.out.println("Está muerto");
         }
-
     }
 }

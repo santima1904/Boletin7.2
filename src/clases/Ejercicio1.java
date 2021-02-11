@@ -45,13 +45,10 @@ public class Ejercicio1 {
         return this.combinacion;
     }
     public void setCombinacion(int combinacion){
-        System.out.println("Introduzca la combinacion");
-        int respuesta = teclado.nextInt();
-        if (respuesta==combinacion){
+        
             this.combinacion = combinacion;
-        }else{
-            System.out.println("No es correcta");
-        }
+  
+        
     }
 
     public boolean getAbierto(){

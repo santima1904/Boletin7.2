@@ -112,10 +112,10 @@ public class PersonajesImp implements Personajes {
      */
     @Override
     public void intercambiarArmaA(PersonajesImp a) {
-        PersonajesImp auxiliar = new PersonajesImp("Pepe", "elfo", "carpintero", 25, 6, 9, 7, Armas.DAGA, Hechizos.SUGUNTUN);
-       auxiliar.arma = this.arma;
-        this.arma = a.arma;
-        a.arma = auxiliar.arma;
+        Armas auxiliar;
+        auxiliar = a.arma;
+        a.arma = this.arma;
+        this.arma = auxiliar;
     }
 
     /*
@@ -161,4 +161,10 @@ public class PersonajesImp implements Personajes {
             System.out.println("Está muerto");
         }
     }
+
+    @Override
+    public String toString() {
+        return this.nombre+" "+this.vida;
+    }
 }
+

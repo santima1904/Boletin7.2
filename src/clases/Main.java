@@ -94,7 +94,8 @@ public class Main {
         elfo.lanzarHechizoA(orco);
         elfo.atacarA(orco);
 
-
+        System.out.println(elfo);
+        orco.toString();
 
 
 
